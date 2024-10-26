@@ -36,13 +36,13 @@ public with sharing class VariablesDataTypesOperators {
        // a = 2;
        // b = 3;
        if  (a == null || B == null) {
-        System.debug('Values are null');
+       // System.debug('Values are null');
          Return null;
          }
 
        
          sum = a + b;
-        System.debug(sum);
+       // System.debug(sum);
         return sum; // Replace null with the variable you used to store the result
     
     
@@ -62,12 +62,12 @@ public with sharing class VariablesDataTypesOperators {
         
          if (a != null && b != null) {
           difference = a - b;
-         System.debug(difference);
+       //  System.debug(difference);
          return difference; // Replace null with the variable you used to store the result
      }
      else if 
           (a == null || B == null) {
-         System.debug('Values are null');
+        // System.debug('Values are null');
           Return null;
      } 
      return difference;
@@ -86,12 +86,12 @@ public with sharing class VariablesDataTypesOperators {
 
         if (a != null && b != null) {
             multiply = a * b;
-            System.debug(multiply);
+           // System.debug(multiply);
             return multiply;
         }
             else if 
              (a == null || b == null) {
-            System.debug('Value is Null');
+           // System.debug('Value is Null');
             return null;
 
              }
@@ -116,19 +116,19 @@ public with sharing class VariablesDataTypesOperators {
         
         if (b == 0){
 
-            system.debug('Division by 0 is not allowed');
+         //   system.debug('Division by 0 is not allowed');
             return 0;
 
         }
         else if (a != null && b != null){
 
             divResult = a / b;
-            system.debug(divResult);
+         //   system.debug(divResult);
             return divResult;
         }
         else if 
         (a  == null || b == null) {
-            System.debug('Value is Null');
+         //   System.debug('Value is Null');
             return null;
         }
       
@@ -174,11 +174,11 @@ public with sharing class VariablesDataTypesOperators {
     
     if (num > 0) {
 
-        system.debug('Number is Positive');
+      //  system.debug('Number is Positive');
         return True;
     }
         else {
-        system.debug('Number is Negative');
+      //  system.debug('Number is Negative');
         return false;
     }
     
@@ -198,11 +198,11 @@ public with sharing class VariablesDataTypesOperators {
        
         if (str1 != null && str2 != null) {
         String conca = str1 + str2;
-        system.debug(conca);
+     //   system.debug(conca);
         return conca;
         }
         else {
-            system.debug('Null values are not allowed');
+      //      system.debug('Null values are not allowed');
             return null;
         }
 
@@ -228,12 +228,12 @@ public with sharing class VariablesDataTypesOperators {
         if (noun != null && verb != null && endingPunctuation != null) {
 
             String completesen = 'The ' + noun + ' is ' + verb + '' + endingPunctuation;
-            system.debug(completesen);
+        //    system.debug(completesen);
             return completesen;
         }
         else {
 
-        system.debug('Null Values are not allowed');
+    //    system.debug('Null Values are not allowed');
         return null;
 
         }
@@ -252,11 +252,11 @@ public with sharing class VariablesDataTypesOperators {
     public static Boolean isDateInPast(Date dt) {
         //return null; // Replace null with the variable you used to store the result
    if ( dt < Date.today() ) {
-        System.debug('Date is in the past');
+    //    System.debug('Date is in the past');
         return true;
    }
     else {
-        System.debug('Date is in the future');
+  //      System.debug('Date is in the future');
         return false;
 
    }
@@ -275,20 +275,20 @@ public with sharing class VariablesDataTypesOperators {
        // return null; // Replace null with the variable you used to store the result
 
        if (dt == Date.today()) {
-        System.debug('Date is Today');
+    //    System.debug('Date is Today');
         return true;
        }
 
        else if 
        ( dt > Date.today()) {
-        System.debug('Date is in future');
+  //      System.debug('Date is in future');
         return true;
 
 
        } 
 
        else {
-        System.debug('Date is in the past');
+    //    System.debug('Date is in the past');
         return false;
 
        }
@@ -309,7 +309,7 @@ public with sharing class VariablesDataTypesOperators {
         Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
         Integer milliseconds;
         milliseconds = MILLISECONDS_PER_MINUTE * minutes;
-        System.debug(milliseconds);
+    //    System.debug(milliseconds);
         return milliseconds; // Replace null with the variable you used to store the result
     }    
 //convertMinutesToMilliseconds(2);
@@ -325,7 +325,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
        Double avgThreeNumbers = (a + b + c)/3;
-       System.debug(avgThreeNumbers);
+     //  System.debug(avgThreeNumbers);
         return avgThreeNumbers; // Replace null with the variable you used to store the result
     }
    //averageOfThreeNumbers(1, 2, 3);
@@ -395,7 +395,7 @@ public with sharing class VariablesDataTypesOperators {
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
         Double fahrenheitvalue   = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR/DIVIDE_FACTOR;
-        system.debug(fahrenheitvalue);     
+    //    system.debug(fahrenheitvalue);     
         return fahrenheitvalue; // Replace null with the variable you used to store the result
     } //convertFahrenheitToCelsius(60);
 
@@ -413,10 +413,10 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
         Double divisionResult = a / b;
-        system.debug('Division result' + divisionResult);
+      //  system.debug('Division result' + divisionResult);
         // Write the code for type casting the divisionResult to an Integer
         Integer roundedResult = (Integer) divisionResult;
-        System.debug('casting result' + roundedResult);
+     //   System.debug('casting result' + roundedResult);
         return roundedResult; // Replace null with the variable you used to store the result
     } 
    //performDivisionAndCast(3,2);
@@ -466,7 +466,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
        Decimal tCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
-       System.debug('###### Total cost is ' + tCost);
+  //     System.debug('###### Total cost is ' + tCost);
         return tCost; // Replace null with the variable you used to store the result
     } //calculateTotalCost(1, 2, 0.05);
 }
